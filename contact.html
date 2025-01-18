@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cade's Food Fusion</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/fusionStyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <div class="row">
+      <header class="col-sm-12">
+        <img class="img-center" src="images/pagelogo.png" alt="Logo" width="250" />
+        <h1 class="text-center">Contact Us</h1>
+      </header>
+    </div>
+    <!-- Navigation Section -->
+    <nav class="row navbar navbar-expand-sm bg-primary justify-content-center">
+      <li class="col-sm-1 text-center">&nbsp;</li>
+      <li class="col-sm-1 text-center"><a href="index.html">Home</a></li>
+      <li class="col-sm-1 text-center"><a href="about.html">About Us</a></li>
+      <li class="col-sm-1 text-center"><a href="breakfast.html">Breakfast</a></li>
+      <li class="col-sm-1 text-center"><a href="lunch.html">Lunch</a></li>
+      <li class="col-sm-1 text-center"><a href="dinner.html">Dinner</a></li>
+      <li class="col-sm-1 text-center"><a href="extras.html">Appetizers</a></li>
+      <li class="col-sm-1 text-center"><a href="locations.html">Locations</a></li>
+      <li class="col-sm-1 text-center"><a href="contact.html">Contact Us</a></li>
+      <li class="col-sm-1 text-center"><a href="events.html">Events</a></li>
+      <li class="col-sm-1 text-center"><a href="order.html">Order</a></li>
+      <li class="col-sm-1 text-center">&nbsp;</li>
+    </nav>
+
+    <!-- Content Section -->
+    <main>
+      <fieldset>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <div>
+            <img
+              src="images/phonecontact.png"
+              alt=""
+              width="30px"
+              class="img-center label-input-style"
+            />
+            <div class="margin-style">
+              <select name="contactPhoneNumber" id="contactPhoneNumber" class="contact-page-style">
+                <option value="">
+                  Choose a location to display the phone number you can call in your location
+                </option>
+                <option value="location1">Whitestone, NY</option>
+                <option value="location2">Garden City, NY</option>
+              </select>
+            </div>
+            <div class="text-center hidden"><a href="tel:+1-718-345-0981">(718) 345-0981</a></div>
+            <div class="text-center hidden"><a href="tel:+1-718-453-1890">(718) 453-1890</a></div>
+            <br />
+            <div>
+              <img
+                src="images/emailcontact.png"
+                alt=""
+                width="30px"
+                class="img-center label-input-style"
+              />
+              <div class="text-center">
+                <a
+                  href="mailto:contact@cadesfoodfusion.com
+              "
+                  >contact@cadesfoodfusion.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <form action="submit.html" method="post">
+        <br />
+        <fieldset>
+          <fieldset>
+            <legend>Contact Form</legend>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Name"
+              class="contact-page-style"
+              required
+            />
+            <label for="userName" class="contact-page-style label-input-style">Name</label>
+            <select name="contactReason" id="contactReason" class="contact-page-style" required>
+              <option value="">How can we help?</option>
+              <option value="applyforjob">I want to apply for a job</option>
+              <option value="others">Other Helps</option>
+            </select>
+            <div class="option1 hidden">
+              <br />
+              <div>
+                <label for="userJobChoice" class="contact-page-style label-input-style">
+                  Which position do you want to apply for?</label
+                >
+                <span class="contact-page-style label-input-style"
+                  ><input
+                    type="radio"
+                    name="userJobChoice"
+                    value="prepcook"
+                    class="userJobChoice"
+                  />
+                  Prep Cook</span
+                >
+                <span class="contact-page-style label-input-style">
+                  <input type="radio" name="userJobChoice" value="waitstaff" />
+                  Wait Staff
+                </span>
+                <br />
+              </div>
+              <textarea
+                name="userAbout"
+                id="userAbout"
+                rows="10"
+                cols="70"
+                class="contact-page-style"
+                placeholder="Tell us about more about yourself"
+              ></textarea>
+              <label for="userAbout" class="contact-page-style label-input-style"
+                >Tell us about more about yourself</label
+              >
+            </div>
+
+            <div class="option2 hidden">
+              <br />
+              <textarea
+                name="userMessage"
+                id="userMessage"
+                rows="10"
+                cols="70"
+                class="contact-page-style"
+                placeholder="Leave Your Message Here"
+              ></textarea>
+              <label for="userMessage" class="contact-page-style label-input-style">
+                Leave Your Message Here</label
+              >
+            </div>
+            <div class="hidden">
+              <label for="userContactChoice" class="contact-page-style label-input-style"
+                >How can we contact You?</label
+              >
+              <span class="contact-page-style label-input-style">
+                <input type="radio" name="userContactChoice" value="userphone" class="userphone" />
+                Phone</span
+              >
+              <div class="hidden">
+                <input
+                  type="tel"
+                  name="userPhone"
+                  id="userPhone"
+                  placeholder="Phone"
+                  class="contact-page-style"
+                />
+                <!-- <label for="userPhone" class="contact-page-style label-input-style">Phone</label> -->
+              </div>
+              <span class="contact-page-style label-input-style">
+                <input type="radio" name="userContactChoice" value="useremail" class="useremail" />
+                Email
+              </span>
+              <div class="hidden">
+                <input
+                  type="email"
+                  name="userEmail"
+                  id="userEmail"
+                  placeholder="Email"
+                  class="contact-page-style"
+                />
+                <!-- <label for="userEmail" class="contact-page-style label-input-style">Email</label> -->
+              </div>
+              <br />
+            </div>
+            <button type="submit" class="btn btn-success contact-page-style submitButton">
+              Submit
+            </button>
+          </fieldset>
+        </fieldset>
+      </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="row">
+        <li class="col-sm-6 text-right"><a href="survey.html">Help Us Serve You Better</a></li>
+        <li class="col-sm-6 text-left"><a href="employment.html">Job Opportunities</a></li>
+      </div>
+      <div class="row">
+        <p class="col-sm-12 text-center">Cade's Food Fusion &copy; 2022</p>
+      </div>
+      <div class="text-center">
+        <a href="#"><i class="fas fa-clock"></i></a>
+        <a href="#"><i class="fas fa-coffee"></i></a>
+        <a href="#"><i class="fas fa-bread-slice"></i></a>
+        <a href="#"><i class="fas fa-bowling-ball"></i></a>
+      </div>
+      <script src="scripts/contact.js"></script>
+    </footer>
+  </body>
+</html>

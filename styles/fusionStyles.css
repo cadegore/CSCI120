@@ -1,0 +1,355 @@
+/* Topic 2 Project Style */
+
+/* Step 2 */
+body {
+  background-color: #e8e5e0;
+}
+
+/* Step 4A */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background-color: #cdd7e8;
+  font-weight: bold;
+  color: #292b2d;
+}
+
+/* Step 4B */
+.dish {
+  background-color: rgb(222, 181, 118);
+  padding: 10px;
+  margin: 10px;
+  border: 2px dashed #ffff33;
+}
+
+/* Step 4C */
+header,
+footer {
+  background-color: #b28439;
+}
+
+/* Step 4D */
+footer {
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+/* Step 4E */
+nav {
+  background-color: #3d3c3a;
+}
+
+nav a {
+  color: white;
+}
+
+/* Step 4F */
+nav > li,
+footer div > li {
+  list-style: none;
+}
+
+/* Step 4G */
+.dish h1,
+.dish h2,
+.dish h3,
+.dish h4,
+.dish h5,
+.dish h6 {
+  font-style: italic;
+}
+
+/* Step 4H */
+.dish {
+  border-radius: 20px;
+}
+
+/* Step 4I */
+#locations {
+  list-style-image: url('../images/arrow.svg');
+}
+
+/* Step 4J */
+a:visited {
+  color: green;
+}
+
+/* Step 4K */
+nav a:visited {
+  color: orange;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+/* Step 4L */
+.dish details {
+  color: red;
+}
+
+/* Step 4M */
+.underConstruction {
+  font-style: italic;
+  color: orange;
+}
+
+/* Topic 3 Project Styles*/
+
+/* Step 2 */
+
+form table {
+  font-size: 1.5rem;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.dish table td,
+.dish table th {
+  border: 1pt solid black;
+  margin: 5px;
+  padding: 5px;
+}
+caption {
+  border: 1pt solid black;
+  font-weight: bold;
+  /* Topic 5 Project Code Overrides */
+  padding-top: 0;
+  padding-bottom: 0;
+  color: black;
+  text-align: center;
+  caption-side: top;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(235, 235, 157);
+}
+
+tbody tr:hover {
+  background-color: blue;
+}
+
+label {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+form fieldset,
+main fieldset {
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: revert;
+  margin: revert;
+  min-width: auto;
+}
+
+fieldset fieldset {
+  background-color: white;
+}
+
+legend {
+  text-align: center;
+  border: 3px dashed red;
+  background-color: white;
+  font-size: 1.5rem;
+  width: auto;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.dish_name {
+  text-align: left;
+}
+
+/* Topic 2 Extra Styles */
+footer p {
+  text-align: center;
+  font-style: italic;
+}
+
+form table tbody tr:nth-child(odd) {
+  background-color: #f8dd72;
+  background-color: rgb(222, 181, 118);
+}
+
+form table tbody tr:hover {
+  background-color: #f87972;
+}
+
+/* Project 5 Styles */
+main {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.dish img {
+  max-width: 100%;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-sm-12 {
+  padding-right: 0;
+}
+
+.row {
+  margin-right: 0;
+}
+
+.fas {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .dish img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  footer div.row li {
+    text-align: center !important;
+  }
+}
+
+.good_choice {
+  background-color: #7fd6a0;
+}
+
+/* Topic 7 */
+
+.contact-form {
+  padding-left: 0 !important;
+}
+
+.workopportunity {
+  display: none !important;
+}
+
+textarea {
+  resize: unset;
+}
+
+@media only screen and (max-width: 630px) {
+  .contact-form {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 690px) {
+  textarea {
+    height: 10em;
+    width: 30em;
+  }
+}
+
+.contact-page-style {
+  width: 50%;
+  display: block;
+  border-radius: 2px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(92, 84, 84, 0.572);
+  border-image: initial;
+  transition: all 0.3s ease 0s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 3px solid #55c57a;
+  background-color: #c1dbc9;
+  color: black;
+}
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  border: 3px solid red;
+  background-color: rgb(239, 207, 207);
+  color: black;
+}
+
+input:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+label {
+  transition: all 0.3s;
+}
+
+textarea:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+
+.hidden {
+  display: none;
+}
+
+.submitButton,
+.label-input-style {
+  border: none;
+}
+
+.submitButton {
+  margin-top: 10px;
+}
+
+.margin-style {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.submitPage {
+  font-size: 5rem;
+  background-image: linear-gradient(to right, #f8dd72, #f87972);
+  color: transparent;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center !important;
+  margin-top: 22%;
+  margin-bottom: auto;
+}
+
+.backtohome a,
+.backtohome {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.backtohome {
+  cursor: auto !important;
+}
+
+.backtohome:hover {
+  transform: scale(1.1);
+}
+
+.backtohome a:hover {
+  text-decoration: none;
+}
